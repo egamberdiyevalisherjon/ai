@@ -1,0 +1,11 @@
+header#main-header {
+  padding: 2.5rem 0;
+
+  ul {
+    gap: 2rem;
+
+    li {
+      @extend %opacity-effect;
+    }
+  }
+}

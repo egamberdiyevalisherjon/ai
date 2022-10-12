@@ -1,0 +1,107 @@
+section#platform {
+  .flex {
+    gap: 5rem;
+  }
+
+  .portion:first-child {
+    position: relative;
+    flex: 3;
+
+    * {
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .ai {
+      position: absolute;
+      top: 140px;
+      left: 40px;
+    }
+    
+    .sn {
+      position: absolute;;
+      top: 215px;
+      left: 40px;
+    }
+    
+    .p2p {
+      position: absolute;;
+      top: 290px;
+      left: 40px;
+    }
+    
+    .pd {
+      position: absolute;;
+      top: 166px;
+      left: 280px;
+    }
+    
+    .epd {
+      position: absolute;;
+      top: 248px;
+      left: 260px;
+    }
+    
+    .ds {
+      display: inline-block;
+      width: 200px;
+      position: absolute;;
+      top: 70px;
+      left: 440px;
+    }
+
+        
+    .in {
+      position: absolute;;
+      top: 166px;
+      left: 518px;
+    }
+        
+    .api {
+      position: absolute;;
+      top: 252px;
+      left: 530px;
+    }
+
+    .cs {
+      position: absolute;;
+      top: 400px;
+      left: 516px;
+    }
+
+
+  }
+
+  .portion:last-child {
+    flex: 2;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+
+    span.grey {
+      color: #aaaaaa;
+    }
+
+    span.gradient {
+      background: linear-gradient(to right, #487fff, #73b5ff, #cb76ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  p {
+    width: 340px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+
+  a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #7b93ff;
+  }
+}

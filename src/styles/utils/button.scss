@@ -1,0 +1,21 @@
+.main-btn {
+  all: unset;
+  padding: 0.5em 1.5em;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  background-color: #1556ee;
+  color: #fff;
+  box-shadow: 0 0 49px rgba(42, 7, 254, 0.4);
+  cursor: pointer;
+  @extend %opacity-effect;
+}
+
+.main-btn.white {
+  background-color: #fff;
+  color: #000;
+}
