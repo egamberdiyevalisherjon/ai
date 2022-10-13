@@ -6,6 +6,11 @@ section#platform {
   .portion:first-child {
     position: relative;
     flex: 3;
+    height: 460px;
+
+    .track-sm {
+      display: none;
+    }
 
     * {
       font-size: 14px;
@@ -18,90 +23,207 @@ section#platform {
       top: 140px;
       left: 40px;
     }
-    
+
     .sn {
-      position: absolute;;
+      position: absolute;
       top: 215px;
       left: 40px;
     }
-    
+
     .p2p {
-      position: absolute;;
+      position: absolute;
       top: 290px;
       left: 40px;
     }
-    
+
     .pd {
-      position: absolute;;
+      position: absolute;
       top: 166px;
       left: 280px;
     }
-    
+
     .epd {
-      position: absolute;;
+      position: absolute;
       top: 248px;
       left: 260px;
     }
-    
+
     .ds {
       display: inline-block;
       width: 200px;
-      position: absolute;;
+      position: absolute;
       top: 70px;
       left: 440px;
     }
 
-        
     .in {
-      position: absolute;;
+      position: absolute;
       top: 166px;
       left: 518px;
     }
-        
+
     .api {
-      position: absolute;;
+      position: absolute;
       top: 252px;
       left: 530px;
     }
 
     .cs {
-      position: absolute;;
+      position: absolute;
       top: 400px;
       left: 516px;
     }
-
-
   }
 
   .portion:last-child {
     flex: 2;
-  }
 
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 500;
 
-    span.grey {
-      color: #aaaaaa;
+      span.grey {
+        color: #aaaaaa;
+      }
+
+      span.gradient {
+        background: linear-gradient(to right, #487fff, #73b5ff, #cb76ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
 
-    span.gradient {
-      background: linear-gradient(to right, #487fff, #73b5ff, #cb76ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    p {
+      width: 340px;
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin: 2rem 0;
+    }
+
+    a {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #7b93ff;
     }
   }
 
-  p {
-    width: 340px;
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin: 2rem 0;
+  @media (max-width: 1240px) {
+    .portion:first-child {
+      flex: 3;
+
+      .track {
+        display: none;
+      }
+
+      .track-sm {
+        display: block;
+        margin: 0 auto;
+      }
+
+      * {
+        font-size: 10px;
+      }
+
+      .ai {
+        width: min-content;
+
+        top: 80px;
+        left: 85px;
+      }
+
+      .sn {
+        width: min-content;
+        top: 80px;
+        left: 205px;
+      }
+
+      .p2p {
+        top: 30px;
+        left: 145px;
+      }
+
+      .pd {
+        top: 187px;
+        left: 83px;
+      }
+
+      .epd {
+        top: 182px;
+        left: 200px;
+      }
+
+      .ds {
+        top: 360px;
+        left: 80px;
+      }
+
+      .in {
+        top: 272px;
+        left: 95px;
+      }
+
+      .api {
+        top: 272px;
+        left: 225px;
+      }
+
+      .cs {
+        top: 480px;
+        left: 155px;
+      }
+    }
   }
 
-  a {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #7b93ff;
+  @media (max-width: 780px) {
+    .portion:first-child {
+      * {
+        font-size: 1rem;
+      }
+
+      .ai {
+        top: 110px;
+        left: 50px;
+      }
+
+      .sn {
+        top: 110px;
+        left: 220px;
+      }
+
+      .p2p {
+        top: 40px;
+        left: 120px;
+      }
+
+      .pd {
+        top: 260px;
+        left: 40px;
+      }
+
+      .epd {
+        top: 252px;
+        left: 198px;
+      }
+
+      .ds {
+        top: 490px;
+        left: 80px;
+      }
+
+      .in {
+        top: 375px;
+        left: 55px;
+      }
+
+      .api {
+        top: 375px;
+        left: 240px;
+      }
+
+      .cs {
+        top: 660px;
+        left: 135px;
+      }
+    }
   }
 }

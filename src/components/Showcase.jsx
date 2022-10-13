@@ -9,7 +9,7 @@ const Showcase = () => {
             <h5>crypto trading</h5>
             <h1>
               Engineers Meet
-              <span className="blue-gradient"> Traders __</span>
+              <span className="blue-gradient"> Traders _</span>
             </h1>
             <p>
               Advanced crypto algorithmic trading and efficient cross-chain

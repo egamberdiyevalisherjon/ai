@@ -1,4 +1,5 @@
 import React from "react";
+import DropMenu from "./DropMenu";
 
 const Header = () => {
   return (
@@ -15,6 +16,7 @@ const Header = () => {
             <li><a href="#">community</a></li>
             <li><a href="#" className="main-btn white">Career <img src="/icons/arrow-left-up.svg" alt="up left arrow" /></a></li>
           </ul>
+        <DropMenu />
         </nav>
       </div>
     </header>

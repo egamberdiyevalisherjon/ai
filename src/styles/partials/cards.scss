@@ -7,6 +7,36 @@ section#cards {
       "spot derivitives arena"
       "spot app app";
     grid-gap: 2rem;
+
+    @media (max-width: 1240px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 320px);
+      grid-template-areas:
+        "spot derivitives"
+        "spot arena"
+        "app app";
+    }
+
+    @media (max-width: 780px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 640px repeat(2, 320px) 640px;
+      grid-template-areas:
+        "spot"
+        "derivitives "
+        "arena"
+        "app";
+      .card {
+        align-items: flex-start;
+
+        &:first-child {
+          background-position: left bottom -200px;
+        }
+
+        &:last-child {
+          background-position: left bottom;
+        }
+      }
+    }
   }
   .card {
     position: relative;

@@ -1,5 +1,5 @@
 section#showcase {
-  height: calc(100vh - 124px);
+  min-height: calc(100vh - 124px);
   display: flex;
   align-items: center;
   background: url(/images/showcase-background.png) no-repeat center / cover;
@@ -18,9 +18,9 @@ section#showcase {
     margin: 1rem 0;
 
     span.blue-gradient {
-      background: linear-gradient(to bottom right, #487FFF, #73B5FF, #CB76FF);
+      background: linear-gradient(to bottom right, #487fff, #73b5ff, #cb76ff);
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent !important;;
+      -webkit-text-fill-color: transparent !important;
     }
   }
 
@@ -40,4 +40,43 @@ section#showcase {
     justify-content: center;
   }
 
+  @media (max-width: 1240px) {
+    h5 {
+      font-size: 0.85rem;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 780px) {
+    align-items: flex-start;
+    text-align: center;
+
+    h1 {
+      font-size: 3.1rem;
+      margin: 1rem auto;
+    }
+
+    p {
+      width: 250px;
+      margin: auto;
+    }
+
+    .showcase-image {
+      position: relative;
+      top: 100px;
+    }
+
+    .main-btn {
+      position: relative;
+      bottom: 250px;
+    }
+  }
 }

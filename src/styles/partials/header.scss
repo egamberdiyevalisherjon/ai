@@ -1,11 +1,60 @@
 header#main-header {
   padding: 2.5rem 0;
+  position: relative;
+  z-index: 1;
 
   ul {
     gap: 2rem;
 
     li {
       @extend %opacity-effect;
+    }
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .drop-menu {
+    background-color: #000;
+    width: 100vw;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    translate: 0 -60px;
+    height: 0;
+    padding: 0;
+    transition: 0.3s;
+
+    ul {
+      width: 390px;
+      height: 250px;
+    }
+
+    li:not(:last-child) {
+      border-bottom: 1px solid #aaa;
+    }
+  }
+
+  #drop-1:checked + .drop-menu {
+    translate: 0 0;
+    height: calc(2rem + 250px);
+    padding: 1rem 0;
+  }
+  @media (max-width: 780px) {
+    nav.flex {
+      flex-direction: row;
+      & > ul {
+        display: none;
+      }
+
+      .dropdown {
+        display: block;
+      }
     }
   }
 }

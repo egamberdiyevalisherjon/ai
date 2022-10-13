@@ -6,6 +6,10 @@ section#about {
     margin-top: 10rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
+
+    @media (max-width: 1240px) {
+      margin-top: 5rem;
+    }
   }
 
   h2 {
@@ -26,6 +30,5 @@ section#about {
 
   li {
     margin-bottom: 2rem;
-
   }
 }

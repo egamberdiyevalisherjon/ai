@@ -1,6 +1,6 @@
 .main-btn {
   all: unset;
-  padding: 0.5em 1.5em;
+  padding: 1em 1.5em;
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -13,6 +13,10 @@
   box-shadow: 0 0 49px rgba(42, 7, 254, 0.4);
   cursor: pointer;
   @extend %opacity-effect;
+
+  @media (max-width: 1240px) {
+    font-size: 1rem;
+  }
 }
 
 .main-btn.white {
